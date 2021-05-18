@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>Descubra Portugal</title>
+</head>
+
+<body>
+
+    <header class="head">
+        <input type="checkbox" id="toggle" />
+        <nav>
+            <div class="mobile">
+                <h1 id="logo">Descubra Portugal</h1>
+                <label class="toggle" for="toggle">&#9776;</label>
+            </div>
+            <ul id="menu">
+                <li><a class="nav-list" href="#photos-container">Locais</a></li>
+                <li><a class="nav-list" href="#experience-container">Experiências</a></li>
+                <li><a class="nav-list" href="#contact-container">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="landing">
+        <img id=photoLanding src="./img/landing2.png" alt="turismo">
+        <h2>Descubra Portugal: As melhores experiências do País.</h2>
+    </section>
+
+    <section id="photos-container">
+        <h3>Alguns dos locais que pode visitar!</h3>
+        <section id="photos">
+            <div class="slideshow">
+                <div class="slides">
+                    <div id="slider-image">
+                        <img id="slider-img" src="./img/porto1.jpg" alt="açores">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="description-container">
+                    <p id="description"></p>
+                </div>
+                <div id="thumbnails-content" class="row">
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section id="experience-container">
+        <h3>Aqui estão as melhores experiências!</h3>
+        <div class="experience">
+            <div class="experience-case">
+                <img class="experience-case-image" src="./img/atividades/tours.jpg" alt="Tours">
+                <h4>Tours</h4>
+            </div>
+            <div class="experience-case">
+                <img class="experience-case-image" src="./img/atividades/tuktuk.jpg" alt="Tuktuk">
+                <h4>TukTuk</h4>
+            </div>
+            <div class="experience-case">
+                <img class="experience-case-image" src="./img/atividades/cruzeiros.jpg" alt="Cruzeiros">
+                <h4>Cruzeiros</h4>
+            </div>
+            <div class="experience-case">
+                <img class="experience-case-image" src="./img/atividades/provas.jpg" alt="Provas Vinho">
+                <h4>Provas Vinho</h4>
+            </div>
+            <div class="experience-case">
+                <img class="experience-case-image" src="./img/atividades/transfers.jpg" alt="Transfers">
+                <h4>Transfers</h4>
+            </div>
+            <div class="experience-case">
+                <img class="experience-case-image" src="./img/atividades/skydive.jpeg" alt="Atividades Turisticas">
+                <h4>Outras Atividades</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-container">
+        <h3>Faça já a sua reserva!</h3>
+        <section id="contact">
+            <form>
+                <label class="contacts" for="name">Nome:</label>
+                <input class="contacts text" type="text" id="name" placeholder="Nome" autocomplete="name" required>
+                <label class="contacts" for="email">Email:</label>
+                <input class="contacts text" type="email" id="name" placeholder="andre@gmail.com" autocomplete="email"
+                    required>
+                <label class="contacts" for="Message">Mensagem:</label>
+                <textarea class="contacts text" name="Message" id="Message" cols="20" rows="5"
+                    placeholder="Escrever aqui" required></textarea>
+                <button class="contacts btn" type="submit">Enviar</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <h5>Descubra Portugal</h5>
+        <ul>
+            <li><a class="fab" href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="fab" href=""><i class="fab fa-youtube"></i></a></li>
+            <li><a class="fab" href=""><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
